@@ -91,11 +91,9 @@ wget $MY_URL/channels_backup_by-Ahmed-Tharwat-Aelnily.tar.gz -qP $TMPDIR
 tar -zxf $TMPDIR/channels_backup_by-Ahmed-Tharwat-Aelnily.tar.gz -C /
 sleep 5
 set +e
-echo
-echo "   >>>>   Reloading Services - Please Wait   <<<<"
-wget -qO - http://127.0.0.1/web/servicelistreload?mode=0 >/dev/null 2>&1
-sleep 2
-echo
+echo ""
+
+echo ""
 
 #########################
 if [ -f $BBCPMT ] && [ -f $BBCPY ] && [ -f $BBCENIGMA ]; then
@@ -182,6 +180,7 @@ else
 fi
 
 exit 0
+
 
 
 
